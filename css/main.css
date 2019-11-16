@@ -103,6 +103,44 @@ textarea {
   margin-right: auto;
 }
 
+#header{
+  align-self:auto;
+}
+
+#logo{
+  display: inline-block;
+  align-self: center;
+}
+
+#primary_links{
+  display: inline-block;
+  height: auto;
+  padding-left:155px;
+}
+
+#primary_links menu{
+  display: table;
+  margin:auto;
+
+}
+ul#horizontal-l {
+  display: inline;
+  list-style: none;
+}
+
+ul#horizontal-l li{
+  display: inline;
+  font-family: SansSerif;
+  font-size: 18px;
+  padding: 10px 30px;
+
+}
+
+#masthead{
+  height: auto;
+  width: 960px;
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
