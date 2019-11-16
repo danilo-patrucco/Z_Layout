@@ -103,32 +103,33 @@ textarea {
   margin-right: auto;
 }
 
-#header{
-  align-self:auto;
+#header {
+  align-self: auto;
 }
 
-#logo{
+#logo {
   display: inline-block;
   align-self: center;
 }
 
-#primary_links{
+#primary_links {
   display: inline-block;
   height: auto;
-  padding-left:155px;
+  padding-left: 155px;
 }
 
-#primary_links menu{
+#primary_links menu {
   display: table;
-  margin:auto;
+  margin: auto;
 
 }
+
 ul#horizontal-l {
   display: inline;
   list-style: none;
 }
 
-ul#horizontal-l li{
+ul#horizontal-l li {
   display: inline;
   font-family: SansSerif, serif;
   font-size: 18px;
@@ -137,8 +138,8 @@ ul#horizontal-l li{
 }
 
 #masthead {
-  clear:both;
-  background-image: linear-gradient(rgba(0, 0, 0,2), rgba(0, 0, 0, 2));
+  clear: both;
+  background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2));
   background-color: #cccccc;
 
   /* Set a specific height */
@@ -154,7 +155,7 @@ ul#horizontal-l li{
 
 /* Place text in the middle of the image */
 #masthead-text {
-  clear:both;
+  clear: both;
   text-align: center;
   position: absolute;
   top: 30%;
@@ -162,19 +163,49 @@ ul#horizontal-l li{
   transform: translate(-50%, -50%);
   color: white;
 }
-#masthead-text p{
+
+#masthead-text p {
   font-size: 24px;
 }
 
-#article_body{
-
+#bottom_page{
+  display: flex;
+  flex-direction: row;
+  width: 960px ;
 }
 
-#article_body_1{
-
+#content {
+  display: inline-block;
+  width: 296px;
+  text-align: center;
 }
 
+#content_1 {
+  display: inline-block;
+  width: 296px;
+  text-align: center;
+}
 
+#contacts{
+  display: inline-block;
+  width: 366px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgba(131,139,126,0.29);
+}
+/*
+#sidepic{
+  display: inline-block;
+  height: auto;
+}
+
+#sidepic a {
+  background-position: top;
+  padding: 0px 30px;
+  position: relative;
+
+}
+*/
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -269,9 +300,9 @@ ul#horizontal-l li{
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -292,16 +323,20 @@ ul#horizontal-l li{
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
@@ -310,14 +345,17 @@ ul#horizontal-l li{
   a[href^="javascript:"]:after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
      * Printing Tables:
      * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -325,16 +363,19 @@ ul#horizontal-l li{
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
