@@ -114,8 +114,9 @@ textarea {
 
 #primary_links {
   display: inline-block;
-  height: auto;
-  padding-left: 155px;
+  height: 14px;
+  text-align: justify-all;
+  padding-left: 140px;
 }
 
 #primary_links menu {
@@ -126,26 +127,23 @@ textarea {
 
 ul#horizontal-l {
   display: inline;
-  list-style: none;
+  list-style: armenian;
 }
 
 ul#horizontal-l li {
   display: inline;
   font-family: SansSerif, serif;
-  font-size: 18px;
-  padding: 10px 30px;
+  font-size: 20px;
+  padding: 20px 30px;
 
 }
-
+/*The following modules (masthead and masthead-text) come from this page https://www.w3schools.com/howto/howto_css_hero_image.asp*/
 #masthead {
   clear: both;
   background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 2));
   background-color: #cccccc;
-
-  /* Set a specific height */
   width: 960px;
   height: auto;
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
